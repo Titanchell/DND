@@ -1,21 +1,238 @@
+<!DOCTYPE html>
 <html lang="de">
     <head>
         <style>
-            div {
-                width:auto;
-                height:auto;
-                border:0px dashed black;
-                margin-top: auto;
-                margin-bottom: auto;
+        div {
+            width:auto;
+            height:auto;
+            margin-top: auto;
+            margin-bottom: auto;
             }
-            body {background-image: url("Pictures/World_Map.jpg");
+         /* Hintergrund layout */
+        body {background-image: url("Pictures/dnd-dragons-of-stormwreck-isle.jpg");
             background-repeat: no-repeat;
-            background-size: 100%;}
-            .ce {background-position: center;}
-        </style>
-        <!DOCTYPE html>
-    </head>
-    <body>
+            background-size: 100%;
+            background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */}
+        .ce {background-position: center;}
 
-    </body>
+        /* Grundlegendes Layout für den Charakterbogen */
+        body {
+            font-family: Arial, sans-serif; /* Setzt die Schriftart auf Arial */
+            line-height: 1.6; /* Stellt den Zeilenabstand für bessere Lesbarkeit ein */
+            margin: 0; /* Entfernt den Standardrand des Browsers */
+            padding: 20px; /* Fügt dem Body-Element einen Innenabstand hinzu */
+        }
+
+        .container {
+            max-width: 900px; /* Maximale Breite der Containerbox */
+            margin: 0 auto; /* Zentriert den Container horizontal */
+            padding: 20px; /* Fügt einen Innenabstand um den Container hinzu */
+            background-color: #b40000; /* Setzt den Hintergrund des Containers auf weiß */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten zum Container hinzu */
+        }
+
+        h1, h2 {
+            text-align: center; /* Zentriert die Überschriften */
+            color: #fffcfc; /* Setzt die Textfarbe auf Schwarz */
+        }
+
+        .section {
+            margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
+        }
+
+        .section h2 {
+            text-decoration: underline; /* Unterstreicht die Überschrift */
+        }
+
+        table {
+            width: 100%; /* Setzt die Tabellenbreite auf 100% */
+            margin-bottom: 20px; /* Fügt unten Abstand zur Tabelle hinzu */
+            border-collapse: collapse; /* Entfernt die Abstände zwischen den Zellen */
+            color:#fffcfc;
+        }
+
+        table, th, th {
+            border: 1px solid #ddd; /* Fügt eine graue Grenze um die Tabelle und Zellen hinzu */
+            padding: 8px; /* Fügt einen Innenabstand in den Zellen hinzu */
+            text-align: center; /* Zentriert den Text in den Zellen */
+        }
+
+        th {
+            background-color: #650a0a; /* Setzt den Hintergrund der Tabellenüberschrift auf ein helles Grau */
+        }
+
+        th {
+            height: 30px; /* Bestimmt die Höhe der Tabellenzellen */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1></h1>
+
+    <!--Characterinformationen-->
+    <div class="section">
+        <h2>Charakterinformationen</h2>
+        <table>
+            <tr>
+                <th width="30%">Charaktername</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Klasse</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Rasse</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Gesinnung</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Hintergrund</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Rüstungsklasse</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Erfahrungs-Punkte</th>
+                <th></th> 
+            </tr>
+        </table>
+    </div>
+
+    <!--Fähigkeitswerte-->
+    <div class="section">
+        <h2>Fähigkeitswerte</h2>
+        <table>
+            <tr>
+                <th width="30%">Stärke</th>
+                <th></th> <!-- Hier den Wert eintragen -->
+            </tr>
+            <tr>
+                <th>Geschicklichkeit</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Konstitution</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Intelligenz</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Weisheit</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Charisma</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+
+    <!--Waffen-->
+    <div class="section">
+        <h2>Waffen</h2>
+        <table>
+            <tr>
+                <th width="30%">Waffe 1</th>
+                <th></th> <!-- Waffenname und Details eintragen -->
+            </tr>
+            <tr>
+                <th>Waffe 2</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Waffe 3</th>
+                <th></th> 
+            </tr>
+        </table>
+    </div>
+
+    <!-- Ausrüstung -->
+    <div class="section">
+        <h2>Ausrüstung</h2>
+        <table>
+            <tr>
+                <th width="30%">Ausrüstung 1</th>
+                <th></th> <!-- Ausrüstungsgegenstand eintragen -->
+            </tr>
+            <tr>
+                <th>Ausrüstung 2</th>
+                <th></th> 
+            </tr>
+            <tr>
+                <th>Ausrüstung 3</th>
+                <th></th> 
+            </tr>
+        </table>
+    </div>
+
+    <!-- Zauber -->
+    <div class="section">
+        <h2>Zauber</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="33.3%">Zaubername</th>
+                    <th width="33.3%">Zauberlevel</th>
+                    <th width="33.3%">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th> <!-- Zaubername eintragen -->
+                    <th></th> <!-- Zauberlevel eintragen -->
+                    <th></th> <!-- Beschreibung des Zaubers -->
+                </tr>
+                <tr>
+                    <th></th> 
+                    <th></th> 
+                    <th></th> 
+                </tr>
+                <tr>
+                    <th></th> 
+                    <th></th> 
+                    <th></th> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Hintergrund -->
+    <div class="section">
+        <h2>Hintergrund</h2>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <!-- Hier können Details zum Hintergrund des Charakters eingetragen werden -->
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Notizen -->
+    <div class="section">
+        <h2>Notizen</h2>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <!-- Hier können zusätzliche Notizen oder Details eingetragen werden -->
+                </th>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+</body>
 </html>
