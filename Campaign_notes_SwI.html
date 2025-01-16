@@ -3,34 +3,45 @@
     <head>
         <style>
             div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                display: flex; /* inhalte werden von rechts angeordnet */
+                justify-content: center; /*inhalt wird in die mitte bewegt*/
+                align-items: center; /* setzt die ausrichtung der inhalte auf die mitte */
             }
-            body {background-image: url("Pictures/Stormwreck_isle_view");
-            background-repeat: no-repeat;
-            background-size: 100%;}
-            .ce {background-position: center;}
+            body {
+                background-image: url("Pictures/Stormwreck_isle_view"); /* setzt den hintergrund */
+                background-repeat: no-repeat; /* sorgt dafür das der hintergrund nur einmal angezeigt wird*/
+                background-size: 100%; /* legt die hintergrund größe fest*/
+                background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */
+            }
         </style>
     </head>
     <body>
-        <div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center">
-        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-        <div style="white-space: pre-wrap; background-color: #650a0a; width: 100%; height: auto; color: #fffcfc;"> 
-            23.11.2024
-                - Sind mit einem Schiff schweigsam auf eine Insel übergesetzt worden (wir kennen uns schon)
-                - Beim Strandabschnitt sind uns Zombies über den Weg gelaufen
-                - Durch weglaufen denen (vorerst) entkommen
-                - Sind hoch gelaufen zu so nem größeren Platz mit vielen Kobolden
-                - Ganz kurz mit denen geredet
-                - Von einer Frau empfangen worden
-                - Ein bisschen dumm hin und her gelaufen, unteranderem in die Küche (nichts außer trinken eingenommen)
-                - In der Bibliothek gelandet beinahe einfach gegangen
-                - Mann (Tarak) getroffen, ausgequetscht und einen Auftrag bekommen
-                - Von der Bibliothek aus von draußen Tumult gehört vermutlich Untote 
-            
-        </div>
-        </div>
+        <div style="height: 95vh; flex-direction: column">
+            <div style="flex-direction: row">
+                <div style="background-color: #650a0a; width: 100%; height: auto; color: #fffcfc"> 
+                    <table>
+                        <tr>
+                            <td>23.11.2024</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <ul>
+                                    <li>Sind mit einem Schiff schweigsam auf eine Insel übergesetzt worden (wir kennen uns schon)</li>
+                                    <li>Beim Strandabschnitt sind uns Zombies über den Weg gelaufen</li>
+                                    <li>Durch weglaufen denen (vorerst) entkommen</li>
+                                    <li>Sind hoch gelaufen zu so nem größeren Platz mit vielen Kobolden</li>
+                                    <li>Ganz kurz mit denen geredet</li>
+                                    <li>Von einer Frau empfangen worden</li>
+                                    <li>Ein bisschen dumm hin und her gelaufen, unteranderem in die Küche (nichts außer trinken eingenommen)</li>
+                                    <li>In der Bibliothek gelandet beinahe einfach gegangen</li>
+                                    <li>Mann (Tarak) getroffen, ausgequetscht und einen Auftrag bekommen</li>
+                                    <li>Von der Bibliothek aus von draußen Tumult gehört vermutlich Untote</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>           
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,29 +1,25 @@
+<!doctype html>
 <html lang="de">
     <head>
         <style>
-            div {
-                width:auto;
-                height:auto;
-                border:0px dashed black;
-                margin-top: auto;
-                margin-bottom: auto;
+            body {
+                background-image: url("Pictures/World_Map.jpg"); /* setzt den hintergrund */
+                background-repeat: no-repeat; /* sorgt dafür das der hintergrund nur einmal angezeigt wird*/
+                background-size: 100%; /* legt die hintergrund größe fest*/
+                background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */
             }
-            body {background-image: url("Pictures/World_Map.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;}
-            .ce {background-position: center;}
-            .Stormwreck_isle_button{
-                margin-top: 27%;
-                margin-left: 12.5%;
-                width: 94.5px;
-                position: fixed;
+            .Stormwreck_isle_button{ /* Klasse für einen Knopf*/
+                margin-top: 27%; /* Setzt Abstand von oben */
+                margin-left: 12.5%; /* Setzt Abstand von Links */
+                width: 94.5px; /* Setzt Breite */
+                position: static; /*  fixiert die position */
             }
-            .Stormwreck_isle_button:hover{
-                transform: scale(1.1);
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            .Stormwreck_isle_button:hover{ /* lässt den knopf hovern wenn man den mauszeiger drüber hält*/
+                transform: scale(1.1); /* vergrößert den Knopf */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Farbe des Schattens beim Hover */
             }
         </style>
-        <!DOCTYPE html>
+
         <title>DND-Seite</title>
     </head>
     <body>

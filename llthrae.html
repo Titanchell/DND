@@ -1,325 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
     <head>
         <style>
-        div {
-            width:auto;
-            height:auto;
-            margin-top: auto;
-            margin-bottom: auto;
+            body {
+                background-image: url("Pictures/dnd-dragons-of-stormwreck-isle.jpg"); /* setzt den hintergrund */
+                background-repeat: no-repeat; /* sorgt dafür das der hintergrund nur einmal angezeigt wird*/
+                background-size: 100%; /* legt die hintergrund größe fest*/
+                background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */
+                font-family: Arial, sans-serif; /* Setzt die Schriftart auf Arial */
+                line-height: 1.6; /* Stellt den Zeilenabstand für bessere Lesbarkeit ein */
+                margin: 0; /* Entfernt den Standardrand des Browsers */
+                padding: 20px; /* Fügt dem Body-Element einen Innenabstand hinzu */
             }
-         /* Hintergrund layout */
-        body {background-image: url("Pictures/dnd-dragons-of-stormwreck-isle.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */}
-        .ce {background-position: center;}
 
-        /* Grundlegendes Layout für den Charakterbogen */
-        body {
-            font-family: Arial, sans-serif; /* Setzt die Schriftart auf Arial */
-            line-height: 1.6; /* Stellt den Zeilenabstand für bessere Lesbarkeit ein */
-            margin: 0; /* Entfernt den Standardrand des Browsers */
-            padding: 20px; /* Fügt dem Body-Element einen Innenabstand hinzu */
-        }
+            .container {
+                max-width: 900px; /* Maximale Breite der Containerbox */
+                margin: 0 auto; /* Zentriert den Container horizontal */
+                padding: 20px; /* Fügt einen Innenabstand um den Container hinzu */
+                background-color: #b40000; /* Setzt den Hintergrund des Containers auf weiß */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten zum Container hinzu */
+            }
 
-        .container {
-            max-width: 900px; /* Maximale Breite der Containerbox */
-            margin: 0 auto; /* Zentriert den Container horizontal */
-            padding: 20px; /* Fügt einen Innenabstand um den Container hinzu */
-            background-color: #b40000; /* Setzt den Hintergrund des Containers auf weiß */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten zum Container hinzu */
-        }
+            h1, h2 {
+                text-align: center; /* Zentriert die Überschriften */
+                color: #fffcfc; /* Setzt die Textfarbe auf Schwarz */
+            }
 
-        h1, h2 {
-            text-align: center; /* Zentriert die Überschriften */
-            color: #fffcfc; /* Setzt die Textfarbe auf Schwarz */
-        }
+            .section {
+                margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
+            }
 
-        .section {
-            margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
-        }
+            .section h2 {
+                text-decoration: underline; /* Unterstreicht die Überschrift */
+            }
 
-        .section h2 {
-            text-decoration: underline; /* Unterstreicht die Überschrift */
-        }
+            table {
+                width: 100%; /* Setzt die Tabellenbreite auf 100% */
+                margin-bottom: 20px; /* Fügt unten Abstand zur Tabelle hinzu */
+                border-collapse: collapse; /* Entfernt die Abstände zwischen den Zellen */
+                color:#fffcfc; /* Setzt die schriftfarbe */
+            }
 
-        table {
-            width: 100%; /* Setzt die Tabellenbreite auf 100% */
-            margin-bottom: 20px; /* Fügt unten Abstand zur Tabelle hinzu */
-            border-collapse: collapse; /* Entfernt die Abstände zwischen den Zellen */
-            color:#fffcfc;
-        }
+            table, th, th {
+                border: 1px solid #ddd; /* Fügt eine graue Grenze um die Tabelle und Zellen hinzu */
+                padding: 8px; /* Fügt einen Innenabstand in den Zellen hinzu */
+                text-align: center; /* Zentriert den Text in den Zellen */
+            }
 
-        table, th, th {
-            border: 1px solid #ddd; /* Fügt eine graue Grenze um die Tabelle und Zellen hinzu */
-            padding: 8px; /* Fügt einen Innenabstand in den Zellen hinzu */
-            text-align: center; /* Zentriert den Text in den Zellen */
-        }
+            th {
+                background-color: #650a0a; /* Setzt den Hintergrund der Tabellenüberschrift*/
+            }
 
-        th {
-            background-color: #650a0a; /* Setzt den Hintergrund der Tabellenüberschrift auf ein helles Grau */
-        }
+            th {
+                height: 30px; /* Bestimmt die Höhe der Tabellenzellen */
+            }
 
-        th {
-            height: 30px; /* Bestimmt die Höhe der Tabellenzellen */
-        }
+        </style>
+    </head>
+    <body>
 
-    </style>
-</head>
-<body>
+        <div class="container">
+            <h1>Llthrae Mytlar</h1>
 
-<div class="container">
-    <h1></h1>
+            <!--Characterinformationen-->
+            <div class="section">
+                <h2>Charakterinformationen</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Charaktername</th>
+                        <th>Llthrae Mytlar</th> 
+                    </tr>
+                    <tr>
+                        <th>Klasse</th>
+                        <th>Artifizient</th> 
+                    </tr>
+                    <tr>
+                        <th>Rasse</th>
+                        <th>Drow</th> 
+                    </tr>
+                    <tr>
+                        <th>Gesinnung</th>
+                        <th>Rechtschaffen Böse</th> 
+                    </tr>
+                    <tr>
+                        <th>Hintergrund</th>
+                        <th>Acolyte</th> 
+                    </tr>
+                    <tr>
+                        <th>Rüstungsklasse</th>
+                        <th>13</th> 
+                    </tr>
+                    <tr>
+                        <th>Healt-Points</th>
+                        <th>8</th> 
+                    </tr>   
+                </table>
+            </div>
 
-    <!--Characterinformationen-->
-    <div class="section">
-        <h2>Charakterinformationen</h2>
-        <table>
-            <tr>
-                <th width="30%">Charaktername</th>
-                <th>Llthrae Mytlar</th> 
-            </tr>
-            <tr>
-                <th>Klasse</th>
-                <th>Artifizient</th> 
-            </tr>
-            <tr>
-                <th>Rasse</th>
-                <th>Drow</th> 
-            </tr>
-            <tr>
-                <th>Gesinnung</th>
-                <th>Rechtschaffen Böse</th> 
-            </tr>
-            <tr>
-                <th>Hintergrund</th>
-                <th>Acolyte</th> 
-            </tr>
-            <tr>
-                <th>Rüstungsklasse</th>
-                <th>13</th> 
-            </tr>
-            <tr>
-                <th>Healt-Points</th>
-                <th>8</th> 
-            </tr>   
-        </table>
-    </div>
+            <!--Fähigkeitswerte-->
+            <div class="section">
+                <h2>Fähigkeitswerte</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Stärke</th>
+                        <th>12 (+1)</th>
+                    </tr>
+                    <tr>
+                        <th>Geschicklichkeit</th>
+                        <th>14(+2)</th>
+                    </tr>
+                    <tr>
+                        <th>Konstitution</th>
+                        <th>10(+0)</th>
+                    </tr>
+                    <tr>
+                        <th>Intelligenz</th>
+                        <th>14(+2)</th>
+                    </tr>
+                    <tr>
+                        <th>Weisheit</th>
+                        <th>12(+1)</th>
+                    </tr>
+                    <tr>
+                        <th>Charisma</th>
+                        <th>14(+2)</th>
+                    </tr>
+                </table>
+            </div>
 
-    <!--Fähigkeitswerte-->
-    <div class="section">
-        <h2>Fähigkeitswerte</h2>
-        <table>
-            <tr>
-                <th width="30%">Stärke</th>
-                <th>12 (+1)</th>
-            </tr>
-            <tr>
-                <th>Geschicklichkeit</th>
-                <th>14(+2)</th>
-            </tr>
-            <tr>
-                <th>Konstitution</th>
-                <th>10(+0)</th>
-            </tr>
-            <tr>
-                <th>Intelligenz</th>
-                <th>14(+2)</th>
-            </tr>
-            <tr>
-                <th>Weisheit</th>
-                <th>12(+1)</th>
-            </tr>
-            <tr>
-                <th>Charisma</th>
-                <th>14(+2)</th>
-            </tr>
-        </table>
-    </div>
+            <!--Waffen-->
+            <div class="section">
+                <h2>Waffen</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Dolch</th>
+                        <th>Atk bonus: +4 1d4+2</th>
+                    </tr>
+                    <tr>
+                        <th>Kampfstab</th>
+                        <th>Atk bonus: +4 1d6+2/1d8+2</th> 
+                    </tr>
+                    <tr>
+                        <th>Armbrust</th>
+                        <th>Atk bonus: +4 1d8+2</th> 
+                    </tr>
+                </table>
+            </div>
 
-    <!--Waffen-->
-    <div class="section">
-        <h2>Waffen</h2>
-        <table>
-            <tr>
-                <th width="30%">Dolch</th>
-                <th>Atk bonus: +4 1d4+2</th>
-            </tr>
-            <tr>
-                <th>Kampfstab</th>
-                <th>Atk bonus: +4 1d6+2/1d8+2</th> 
-            </tr>
-            <tr>
-                <th>Armbrust</th>
-                <th>Atk bonus: +4 1d8+2</th> 
-            </tr>
-        </table>
-    </div>
+            <!-- Ausrüstung -->
+            <div class="section">
+                <h2>Ausrüstung</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Lederrüstung</th>
+                        <th>Eine Lederrüstung die den Oberkörper sowie die Arme abdeckt. AC: 11+ Dex Modifier</th>
+                    </tr>
+                    <tr>
+                        <th>Heiliges Spinnen-Symbol</th>
+                        <th>Ein heiliger Anhänger der eine Spinne. Er kann von Paladinen oder Clerics als Zauberfocus genutzt werden</th> 
+                    </tr>
+                    <!-- <tr>
+                        <th>Ausrüstung 3</th>
+                        <th></th> 
+                    </tr> -->
+                </table>
+            </div>
 
-    <!-- Ausrüstung -->
-    <div class="section">
-        <h2>Ausrüstung</h2>
-        <table>
-            <tr>
-                <th width="30%">Lederrüstung</th>
-                <th>Eine Lederrüstung die den Oberkörper sowie die Arme abdeckt. AC: 11+ Dex Modifier</th>
-            </tr>
-            <tr>
-                <th>Heiliges Spinnen-Symbol</th>
-                <th>Ein heiliger Anhänger der eine Spinne. Er kann von Paladinen oder Clerics als Zauberfocus genutzt werden</th> 
-            </tr>
-            <!-- <tr>
-                <th>Ausrüstung 3</th>
-                <th></th> 
-            </tr> -->
-        </table>
-    </div>
+            <!--Zauberfähigkeiten-->
+            <div class="section">
+                <h2>Zauberfähigkeiten</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="50%">Typ</th>
+                            <th>Wert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Zauber Modifier</th>
+                            <th>+4</th>
+                        </tr>
+                        <tr>
+                            <th>Zauberrettungs Wurf</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>Spell Attack Bonus</th>
+                            <th>+4</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Zauber -->
+            <div class="section">
+                <h2>Zauber</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="25%">Zaubername</th>
+                            <th width="25%">Zauberlevel</th>
+                            <th width="50%">Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Ausbessern</th>
+                            <th>0</th>
+                            <th>Dieser Zauber repariert eine Bruchstelle oder einen Riss in einem Gegenstand, den du berührst, wie ein zerbrochenes Kettenglied, die beiden Hälften eines zerbrochenen Schlüssels, einen zerrissenen Umhang oder einen lecken Weinschlauch. Solange der Riss oder die Bruchstelle in keiner Dimension größer als 30 Zentimeter ist, kannst du sie flicken, sodass keine Spur des vorherigen Schadens übrigbleibt. Der Zauber kann einen magischen Gegenstand oder ein Konstrukt auf physische Weise reparieren, der Zauber kann einem solchen Gegenstand aber nicht seine Magie wiedergeben.</th> <!-- Beschreibung des Zaubers -->
+                        </tr>
+                        <tr>
+                            <th>Blitzköder</th> 
+                            <th>0</th> 
+                            <th>Du lässt einen Blitzstrahl auf eine Kreatur deiner Wahl peitschen, die du innerhalb von 4,5 Metern sehen kannst. Das Ziel muss einen erfolgreichen Rettungswurf auf Stärke durchführen, sonst ziehst du es bis zu drei Meter in gerader Linie an dich heran und es nimmt 1W8 Blitzschaden, falls es innerhalb von 1,5 Metern von dir landet. Der Schaden dieses Zaubers steigt umje 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst.</th> 
+                        </tr>
+                        <tr>
+                            <th>Tanzende Lichter</th> 
+                            <th>0</th> 
+                            <th>Du kannst bis zu vier Lichter in Fackelgröße in Reichweite erstellen und sie als Fackeln, Laternen oder Leuchtkugeln erscheinen lassen, die während der Wirkungsdauer in der Luft schweben. Du kannst die vier Lichter auch zu einer humanoiden Gestalt mittlerer Größe kombinieren. Jedes Licht strahlt unabhängig von der Form dämmriges Licht im Radius von drei Metern aus. Als Bonusaktion kannst du die Lichter bis zu 18 Meter an einen neuen Ort in Reichweite bewegen. Die Lichter müssen sich im Abstand von bis zu sechs Metern zueinander befinden. Wenn sie die Reichweite des Zaubers verlassen, erlöschen sie.</th> 
+                        </tr>
+                        <tr>
+                            <th>Falsches Leben</th> 
+                            <th>1</th> 
+                            <th>Indem du dich mit einem nekromantischen Abbild des Lebens verstärkst, erhältst du für die Dauer des Zaubers 1W4 + 4 temporäre Trefferpunkte. Wenn du diesen Zauber mit einem Zauberplatz des 2. Grads oder höher wirkst, erhältst du 5 zusätzliche temporäre Trefferpunkte für jeden Zaubergrad über dem ersten.</th> 
+                        </tr>
+                        <tr>
+                            <th>Selbstverkleidung</th> 
+                            <th>1</th> 
+                            <th>Du lässt dich selbst - einschließlich deiner Kleidung, Rüstung, Waffen und anderer Gegenstände an deiner Person - anders aussehen, bis der Zauber endet oder bis du deine Aktion nutzt, um ihn abzubrechen. Du kannst 30 Zentimeter kleiner oder größer erscheinen und du kannst dünn, fett oder dazwischen erscheinen. Du kannst deinen Körpertyp nicht ändern, also musst du eine Form annehmen, die die gleiche Grundanordnung der Gliedmaßen hat. Ansonsten ist das Ausmaß der Illusion dir überlassen. Die Veränderungen, die dieser Zauber bewirkt, halten einer physischen Überprüfung nicht stand. Wenn du diesen Zauber zum Beispiel verwendest, um deiner Kleidung einen Hut hinzuzufügen, gehen Objekte durch den Hut hindurch, und jeder, der ihn berührt, würde nichts spüren oder deinen Kopf und deine Haare fühlen. Wenn du diesen Zauber verwendest, um dünner zu erscheinen als du bist, würde die Hand von jemandem, der die Hand ausstreckt, um dich zu berühren, gegen dich stoßen, während sie sich scheinbar noch in der Luft befindet. Um zu erkennen, dass du verkleidet bist, kann eine Kreatur ihre Aktion nutzen, um deine Erscheinung zu untersuchen und muss einen Intelligenztest (Nachforschung) gegen deinen Zauberrettungswurf SG bestehen.</th> 
+                        </tr>
+                        <tr>
+                            <th></th> 
+                            <th></th> 
+                            <th></th> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!--Traits-->
+            <div class="section">
+                <h2>Traits</h2>
+                <table>
+                    <tr>
+                        <th width="50%">Traitname</th>
+                        <th width="50%">Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <th>verbesserte Dunkelsicht 18m</th>
+                        <th>Kann bei wenigem oder gar keinem Licht so sehen als wäre es heller Tag</th>
+                    </tr>
+                </table>
+            </div>
 
-    <!--Zauberfähigkeiten-->
-    <div class="section">
-        <h2>Zauberfähigkeiten</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th width="50%">Typ</th>
-                    <th>Wert</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Zauber Modifier</th>
-                    <th>+4</th>
-                </tr>
-                <tr>
-                    <th>Zauberrettungs Wurf</th>
-                    <th>12</th>
-                </tr>
-                <tr>
-                    <th>Spell Attack Bonus</th>
-                    <th>+4</th>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <!-- Zauber -->
-    <div class="section">
-        <h2>Zauber</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th width="25%">Zaubername</th>
-                    <th width="25%">Zauberlevel</th>
-                    <th width="50%">Beschreibung</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Ausbessern</th>
-                    <th>0</th>
-                    <th>Dieser Zauber repariert eine Bruchstelle oder einen Riss in einem Gegenstand, den du berührst, wie ein zerbrochenes Kettenglied, die beiden Hälften eines zerbrochenen Schlüssels, einen zerrissenen Umhang oder einen lecken Weinschlauch. Solange der Riss oder die Bruchstelle in keiner Dimension größer als 30 Zentimeter ist, kannst du sie flicken, sodass keine Spur des vorherigen Schadens übrigbleibt. Der Zauber kann einen magischen Gegenstand oder ein Konstrukt auf physische Weise reparieren, der Zauber kann einem solchen Gegenstand aber nicht seine Magie wiedergeben.</th> <!-- Beschreibung des Zaubers -->
-                </tr>
-                <tr>
-                    <th>Blitzköder</th> 
-                    <th>0</th> 
-                    <th>Du lässt einen Blitzstrahl auf eine Kreatur deiner Wahl peitschen, die du innerhalb von 4,5 Metern sehen kannst. Das Ziel muss einen erfolgreichen Rettungswurf auf Stärke durchführen, sonst ziehst du es bis zu drei Meter in gerader Linie an dich heran und es nimmt 1W8 Blitzschaden, falls es innerhalb von 1,5 Metern von dir landet. Der Schaden dieses Zaubers steigt umje 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst.</th> 
-                </tr>
-                <tr>
-                    <th>Tanzende Lichter</th> 
-                    <th>0</th> 
-                    <th>Du kannst bis zu vier Lichter in Fackelgröße in Reichweite erstellen und sie als Fackeln, Laternen oder Leuchtkugeln erscheinen lassen, die während der Wirkungsdauer in der Luft schweben. Du kannst die vier Lichter auch zu einer humanoiden Gestalt mittlerer Größe kombinieren. Jedes Licht strahlt unabhängig von der Form dämmriges Licht im Radius von drei Metern aus. Als Bonusaktion kannst du die Lichter bis zu 18 Meter an einen neuen Ort in Reichweite bewegen. Die Lichter müssen sich im Abstand von bis zu sechs Metern zueinander befinden. Wenn sie die Reichweite des Zaubers verlassen, erlöschen sie.</th> 
-                </tr>
-                <tr>
-                    <th>Falsches Leben</th> 
-                    <th>1</th> 
-                    <th>Indem du dich mit einem nekromantischen Abbild des Lebens verstärkst, erhältst du für die Dauer des Zaubers 1W4 + 4 temporäre Trefferpunkte. Wenn du diesen Zauber mit einem Zauberplatz des 2. Grads oder höher wirkst, erhältst du 5 zusätzliche temporäre Trefferpunkte für jeden Zaubergrad über dem ersten.</th> 
-                </tr>
-                <tr>
-                    <th>Selbstverkleidung</th> 
-                    <th>1</th> 
-                    <th>Du lässt dich selbst - einschließlich deiner Kleidung, Rüstung, Waffen und anderer Gegenstände an deiner Person - anders aussehen, bis der Zauber endet oder bis du deine Aktion nutzt, um ihn abzubrechen. Du kannst 30 Zentimeter kleiner oder größer erscheinen und du kannst dünn, fett oder dazwischen erscheinen. Du kannst deinen Körpertyp nicht ändern, also musst du eine Form annehmen, die die gleiche Grundanordnung der Gliedmaßen hat. Ansonsten ist das Ausmaß der Illusion dir überlassen. Die Veränderungen, die dieser Zauber bewirkt, halten einer physischen Überprüfung nicht stand. Wenn du diesen Zauber zum Beispiel verwendest, um deiner Kleidung einen Hut hinzuzufügen, gehen Objekte durch den Hut hindurch, und jeder, der ihn berührt, würde nichts spüren oder deinen Kopf und deine Haare fühlen. Wenn du diesen Zauber verwendest, um dünner zu erscheinen als du bist, würde die Hand von jemandem, der die Hand ausstreckt, um dich zu berühren, gegen dich stoßen, während sie sich scheinbar noch in der Luft befindet. Um zu erkennen, dass du verkleidet bist, kann eine Kreatur ihre Aktion nutzen, um deine Erscheinung zu untersuchen und muss einen Intelligenztest (Nachforschung) gegen deinen Zauberrettungswurf SG bestehen.</th> 
-                </tr>
-                <tr>
-                    <th></th> 
-                    <th></th> 
-                    <th></th> 
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <!--Traits-->
-    <div class="section">
-        <h2>Traits</h2>
-        <table>
-            <tr>
-                <th width="50%">Traitname</th>
-                <th width="50%">Beschreibung</th>
-            </tr>
-            <tr>
-                <th>verbesserte Dunkelsicht 18m</th>
-                <th>Kann bei wenigem oder gar keinem Licht so sehen als wäre es heller Tag</th>
-            </tr>
-        </table>
-    </div>
+            <!--Sprachen-->
+            <div class="section">
+                <h2>Sprachen</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                        Standart 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Draconisch
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-    <!--Sprachen-->
-    <div class="section">
-        <h2>Sprachen</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                   Standart 
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    Draconisch
-                </th>
-            </tr>
-        </table>
-    </div>
+            <!-- Hintergrund -->
+            <div class="section">
+                <h2>Hintergrundgeschichte</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Mein Name ist Llthrae Mytlar und ich komme aus der Udadrow-Metropole Menzoberranzan. Es ist schon ganz richtig, was ihr von dieser Stadt gehört habt, ohne Ehrgeiz, Rücksichtslosigkeit, Verschlagenheit und tiefste Grausamkeit im Herzen kommt man nicht so weit. Das musst ich schon in frühen Kindheitstagen lernen. <p>
+                            Ich fand früh heraus wie ich meinen zwei Monate jüngeren Bruder manipulieren konnte, um ihn zu meinem Nutzen zu verwenden. Erst tat ich das mehr zu meinem Spaß oder aus Bequemlichkeit, aber als es für mich dann an die höre Schule der Arach-Tinilith ging merkte ich schnell, dass meine eigenen Leistungen nicht ausreichten. So erfand ich schon bald meine ersten kleineren Tüfteleien, die mein Leben erleichtern sollten oder auch mit ein bisschen Timingtalent meine Mitstreiterinnen in ein schlechtes Licht rückten. Schnell hatte ich mich bei den meisten Lehrerinnen beliebt gemacht und mir erfolgreich Feinde unter meinen Mitlernenden gemacht.<p>
+                            Als das dann nicht mehr ausreichte wand ich mich wieder an meinen auch so leichtgläubigen Bruder, der für mich meine Aufgaben mit, ich muss schon sagen, Bravour bewältigte. Damit dieser Schwindel nicht aufflog halfen mir wieder meine genialen Erfindungen. Auf diese Weise, also arbeitet ich mich immer höher und glaubte fest daran, dass ich es weitbringen würde. <p>
+                            Eines Tages kam es dann zu meiner ersten großen Opfergabe und ich sah es als eine günstige Fügung, dass ich mich noch nie gut mit meiner Mutter verstanden hatte. Nach diesem besagten Tag war sie also nicht mehr und mein Bruder, der eine merkwürdige Art von Gefühlen für uns verspürte, was man anderswo wohl Zuneigung oder Familienliebe nennt, erfand ich die Geschichte, sie sei von Lolth Berufen worden auf eine Mission zu gehen. Keine Ahnung warum er glaubt, dass meine unbedeutende Mutter zu so etwas berufen werden würde. Aber das wichtigste war, dass er mir glaubte, damit ich ihn weiter für meine Zwecke verwenden könnte.<p>
+                            Jeden Falls bekam ich aufgrund meines Loyalitätsbeweis zu Lolth, mein geliebtes und heiliges Spinnensymbol. <p>
+                            Das ich als erste richtige Opferung gleich meine Mutter opferte, schindete, insgeheim natürlich, bei einigen großen Eindruck und ich wusste, dass einige anfingen sich um ihre Stellung, wegen mir, zu Fürchten und andere sich heimlich die Hände rieben um mich in meiner zukünftigen Stellung zu ihrem eigenen Vorteil zu beeinflussen. <p>
+                            Erst dankte ich Lolth für diese günstigen Geisteseinfall, doch umso schneller sollte mir eine neue Prüfung gestellt werden. <p>
+                            Irgendwie fand eine meiner Meisterinnen heraus, oder eine Fledermaus flüsterte es ihr, dass ich eine enge Bindung zu meinem Bruder hatte. Logischerweise folgte darauf, dass ich ihn als nächstes für Lolth opfern sollte. Nun war also das eingetroffen was ich schon immer versucht hatte zu verhindern, in mein größtes Geheimnis war eine ganze Flut von Licht geflossen. Nicht, dass wir und falsch verstehen, ich habe kein Problem ihn zu töten doch brauche ich ihn für meinen Aufstieg. <p>
+                            Woraus sich aber auch schließen ließ, dass sie nicht um meine Betrüge wusste. Das war einer Seitz gut, aber wenn ich meinen Bruder nicht weiter ausnutzen können würde, würde ich mir Obermutter werden zu können, abschminken können. <p>
+                            In einer besonders dunklen Nacht beschloss ich dann mich dieser Schmach und Unwürdigkeit zu entziehen und floh aus Menzoberranzan bis an die grauenvoll helle Oberwelt. <p>
+                            Ich nahm nur wenige Sachen mit und sagte niemanden Lebwohl, wieso auch, dort wünscht sich niemand etwas Gutes, außer vielleicht mein sentimentaler Bruder. <p>
+                            Mein grob gewebtes neues Ziel war und ist es in eine andere Underdrow Stadt zu ziehen und mich dort ganz nach oben an die Spitze zu arbeiten. Doch vorerst muss ich ein wertvolles und eindrucksvolles Geschenk als Ehrerweisung beschaffen, damit dieser Plan aufgeht. <p>
+                            Nun bin ich schon seit einigen Monaten an der Oberwelt und ich habe mich immer noch nicht ganz an die helligkeit gewöhnt und begreife nicht recht warum hier oben alle so höfflich sind. Vor ein paar Wochen habe ich zwei Gefährten getroffen und die meinen ernsthaft diese Höflichkeit sei echt kein Trug und würde sich so schicken. Gemeinsam ist unser Ziel eine Insel wo ein großer Drache getötet wurde. <p>
+                            Dies ist der Anfang meiner Lebenschronik, die man sich in Hundertjahren noch über die große Llthrae Mytlar erzählen wird.
 
-    <!-- Hintergrund -->
-    <div class="section">
-        <h2>Hintergrundgeschichte</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                    Mein Name ist Llthrae Mytlar und ich komme aus der Udadrow-Metropole Menzoberranzan. Es ist schon ganz richtig, was ihr von dieser Stadt gehört habt, ohne Ehrgeiz, Rücksichtslosigkeit, Verschlagenheit und tiefste Grausamkeit im Herzen kommt man nicht so weit. Das musst ich schon in frühen Kindheitstagen lernen. <p>
-                    Ich fand früh heraus wie ich meinen zwei Monate jüngeren Bruder manipulieren konnte, um ihn zu meinem Nutzen zu verwenden. Erst tat ich das mehr zu meinem Spaß oder aus Bequemlichkeit, aber als es für mich dann an die höre Schule der Arach-Tinilith ging merkte ich schnell, dass meine eigenen Leistungen nicht ausreichten. So erfand ich schon bald meine ersten kleineren Tüfteleien, die mein Leben erleichtern sollten oder auch mit ein bisschen Timingtalent meine Mitstreiterinnen in ein schlechtes Licht rückten. Schnell hatte ich mich bei den meisten Lehrerinnen beliebt gemacht und mir erfolgreich Feinde unter meinen Mitlernenden gemacht.<p>
-                    Als das dann nicht mehr ausreichte wand ich mich wieder an meinen auch so leichtgläubigen Bruder, der für mich meine Aufgaben mit, ich muss schon sagen, Bravour bewältigte. Damit dieser Schwindel nicht aufflog halfen mir wieder meine genialen Erfindungen. Auf diese Weise, also arbeitet ich mich immer höher und glaubte fest daran, dass ich es weitbringen würde. <p>
-                    Eines Tages kam es dann zu meiner ersten großen Opfergabe und ich sah es als eine günstige Fügung, dass ich mich noch nie gut mit meiner Mutter verstanden hatte. Nach diesem besagten Tag war sie also nicht mehr und mein Bruder, der eine merkwürdige Art von Gefühlen für uns verspürte, was man anderswo wohl Zuneigung oder Familienliebe nennt, erfand ich die Geschichte, sie sei von Lolth Berufen worden auf eine Mission zu gehen. Keine Ahnung warum er glaubt, dass meine unbedeutende Mutter zu so etwas berufen werden würde. Aber das wichtigste war, dass er mir glaubte, damit ich ihn weiter für meine Zwecke verwenden könnte.<p>
-                    Jeden Falls bekam ich aufgrund meines Loyalitätsbeweis zu Lolth, mein geliebtes und heiliges Spinnensymbol. <p>
-                    Das ich als erste richtige Opferung gleich meine Mutter opferte, schindete, insgeheim natürlich, bei einigen großen Eindruck und ich wusste, dass einige anfingen sich um ihre Stellung, wegen mir, zu Fürchten und andere sich heimlich die Hände rieben um mich in meiner zukünftigen Stellung zu ihrem eigenen Vorteil zu beeinflussen. <p>
-                    Erst dankte ich Lolth für diese günstigen Geisteseinfall, doch umso schneller sollte mir eine neue Prüfung gestellt werden. <p>
-                    Irgendwie fand eine meiner Meisterinnen heraus, oder eine Fledermaus flüsterte es ihr, dass ich eine enge Bindung zu meinem Bruder hatte. Logischerweise folgte darauf, dass ich ihn als nächstes für Lolth opfern sollte. Nun war also das eingetroffen was ich schon immer versucht hatte zu verhindern, in mein größtes Geheimnis war eine ganze Flut von Licht geflossen. Nicht, dass wir und falsch verstehen, ich habe kein Problem ihn zu töten doch brauche ich ihn für meinen Aufstieg. <p>
-                    Woraus sich aber auch schließen ließ, dass sie nicht um meine Betrüge wusste. Das war einer Seitz gut, aber wenn ich meinen Bruder nicht weiter ausnutzen können würde, würde ich mir Obermutter werden zu können, abschminken können. <p>
-                    In einer besonders dunklen Nacht beschloss ich dann mich dieser Schmach und Unwürdigkeit zu entziehen und floh aus Menzoberranzan bis an die grauenvoll helle Oberwelt. <p>
-                    Ich nahm nur wenige Sachen mit und sagte niemanden Lebwohl, wieso auch, dort wünscht sich niemand etwas Gutes, außer vielleicht mein sentimentaler Bruder. <p>
-                    Mein grob gewebtes neues Ziel war und ist es in eine andere Underdrow Stadt zu ziehen und mich dort ganz nach oben an die Spitze zu arbeiten. Doch vorerst muss ich ein wertvolles und eindrucksvolles Geschenk als Ehrerweisung beschaffen, damit dieser Plan aufgeht. <p>
-                    Nun bin ich schon seit einigen Monaten an der Oberwelt und ich habe mich immer noch nicht ganz an die helligkeit gewöhnt und begreife nicht recht warum hier oben alle so höfflich sind. Vor ein paar Wochen habe ich zwei Gefährten getroffen und die meinen ernsthaft diese Höflichkeit sei echt kein Trug und würde sich so schicken. Gemeinsam ist unser Ziel eine Insel wo ein großer Drache getötet wurde. <p>
-                    Dies ist der Anfang meiner Lebenschronik, die man sich in Hundertjahren noch über die große Llthrae Mytlar erzählen wird.
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-                </th>
-            </tr>
-        </table>
-    </div>
+            <!-- Notizen -->
+            <div class="section">
+                <h2>Notizen</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <!-- Hier können zusätzliche Notizen oder Details eingetragen werden -->
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-    <!-- Notizen -->
-    <div class="section">
-        <h2>Notizen</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                    <!-- Hier können zusätzliche Notizen oder Details eingetragen werden -->
-                </th>
-            </tr>
-        </table>
-    </div>
-
-</div>
+        </div>
 
 
-</body>
+    </body>
 </html>

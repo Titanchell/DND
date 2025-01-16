@@ -1,276 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
     <head>
         <style>
-        div {
-            width:auto;
-            height:auto;
-            margin-top: auto;
-            margin-bottom: auto;
+            body {
+                background-image: url("Pictures/dnd-dragons-of-stormwreck-isle.jpg"); /* setzt den hintergrund */
+                background-repeat: no-repeat; /* sorgt dafür das der hintergrund nur einmal angezeigt wird*/
+                background-size: 100%; /* legt die hintergrund größe fest*/
+                background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */
+                font-family: Arial, sans-serif; /* Setzt die Schriftart auf Arial */
+                line-height: 1.6; /* Stellt den Zeilenabstand für bessere Lesbarkeit ein */
+                margin: 0; /* Entfernt den Standardrand des Browsers */
+                padding: 20px; /* Fügt dem Body-Element einen Innenabstand hinzu */
             }
-         /* Hintergrund layout */
-        body {background-image: url("Pictures/dnd-dragons-of-stormwreck-isle.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */}
-        .ce {background-position: center;}
 
-        /* Grundlegendes Layout für den Charakterbogen */
-        body {
-            font-family: Arial, sans-serif; /* Setzt die Schriftart auf Arial */
-            line-height: 1.6; /* Stellt den Zeilenabstand für bessere Lesbarkeit ein */
-            margin: 0; /* Entfernt den Standardrand des Browsers */
-            padding: 20px; /* Fügt dem Body-Element einen Innenabstand hinzu */
-        }
+            .container {
+                max-width: 900px; /* Maximale Breite der Containerbox */
+                margin: 0 auto; /* Zentriert den Container horizontal */
+                padding: 20px; /* Fügt einen Innenabstand um den Container hinzu */
+                background-color: #b40000; /* Setzt den Hintergrund des Containers auf weiß */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten zum Container hinzu */
+            }
 
-        .container {
-            max-width: 900px; /* Maximale Breite der Containerbox */
-            margin: 0 auto; /* Zentriert den Container horizontal */
-            padding: 20px; /* Fügt einen Innenabstand um den Container hinzu */
-            background-color: #b40000; /* Setzt den Hintergrund des Containers auf weiß */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten zum Container hinzu */
-        }
+            h1, h2 {
+                text-align: center; /* Zentriert die Überschriften */
+                color: #fffcfc; /* Setzt die Textfarbe auf Schwarz */
+            }
 
-        h1, h2 {
-            text-align: center; /* Zentriert die Überschriften */
-            color: #fffcfc; /* Setzt die Textfarbe auf Schwarz */
-        }
+            .section {
+                margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
+            }
 
-        .section {
-            margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
-        }
+            .section h2 {
+                text-decoration: underline; /* Unterstreicht die Überschrift */
+            }
 
-        .section h2 {
-            text-decoration: underline; /* Unterstreicht die Überschrift */
-        }
+            table {
+                width: 100%; /* Setzt die Tabellenbreite auf 100% */
+                margin-bottom: 20px; /* Fügt unten Abstand zur Tabelle hinzu */
+                border-collapse: collapse; /* Entfernt die Abstände zwischen den Zellen */
+                color:#fffcfc; /* Setzt die schriftfarbe */
+            }
 
-        table {
-            width: 100%; /* Setzt die Tabellenbreite auf 100% */
-            margin-bottom: 20px; /* Fügt unten Abstand zur Tabelle hinzu */
-            border-collapse: collapse; /* Entfernt die Abstände zwischen den Zellen */
-            color:#fffcfc;
-        }
+            table, th, th {
+                border: 1px solid #ddd; /* Fügt eine Grenze um die Tabelle und Zellen hinzu */
+                padding: 8px; /* Fügt einen Innenabstand in den Zellen hinzu */
+                text-align: center; /* Zentriert den Text in den Zellen */
+            }
 
-        table, th, th {
-            border: 1px solid #ddd; /* Fügt eine graue Grenze um die Tabelle und Zellen hinzu */
-            padding: 8px; /* Fügt einen Innenabstand in den Zellen hinzu */
-            text-align: center; /* Zentriert den Text in den Zellen */
-        }
+            th {
+                background-color: #650a0a; /* Setzt den Hintergrund der Tabellenüberschrift*/
+            }
 
-        th {
-            background-color: #650a0a; /* Setzt den Hintergrund der Tabellenüberschrift auf ein helles Grau */
-        }
+            th {
+                height: 30px; /* Bestimmt die Höhe der Tabellenzellen */
+            }
 
-        th {
-            height: 30px; /* Bestimmt die Höhe der Tabellenzellen */
-        }
+        </style>
+    </head>
+    <body>
 
-    </style>
-</head>
-<body>
+        <div class="container">
+            <h1>Quincy Nightshade</h1>
 
-<div class="container">
-    <h1></h1>
+            <!--Characterinformationen-->
+            <div class="section">
+                <h2>Charakterinformationen</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Charaktername</th>
+                        <th>Quincy Nightshade</th> 
+                    </tr>
+                    <tr>
+                        <th>Klasse</th>
+                        <th>Schurke</th> 
+                    </tr>
+                    <tr>
+                        <th>Rasse</th>
+                        <th>Leichtfuß-Halbling</th> 
+                    </tr>
+                    <tr>
+                        <th>Gesinnung</th>
+                        <th>Chaotisch gut</th> 
+                    </tr>
+                    <tr>
+                        <th>Hintergrund</th>
+                        <th>Krimineller</th> 
+                    </tr>
+                    <tr>
+                        <th>Rüstungsklasse</th>
+                        <th>14</th> 
+                    </tr>
+                    <tr>
+                        <th>Health Points</th>
+                        <th>9</th> 
+                    </tr>
+                </table>
+            </div>
 
-    <!--Characterinformationen-->
-    <div class="section">
-        <h2>Charakterinformationen</h2>
-        <table>
-            <tr>
-                <th width="30%">Charaktername</th>
-                <th>Quincy Nightshade</th> 
-            </tr>
-            <tr>
-                <th>Klasse</th>
-                <th>Schurke</th> 
-            </tr>
-            <tr>
-                <th>Rasse</th>
-                <th>Leichtfuß-Halbling</th> 
-            </tr>
-            <tr>
-                <th>Gesinnung</th>
-                <th>Chaotisch gut</th> 
-            </tr>
-            <tr>
-                <th>Hintergrund</th>
-                <th>Krimineller</th> 
-            </tr>
-            <tr>
-                <th>Rüstungsklasse</th>
-                <th>14</th> 
-            </tr>
-            <tr>
-                <th>Health Points</th>
-                <th>9</th> 
-            </tr>
-        </table>
-    </div>
+            <!--Fähigkeitswerte-->
+            <div class="section">
+                <h2>Fähigkeitswerte</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Stärke</th>
+                        <th>8 (-1)</th> 
+                    </tr>
+                    <tr>
+                        <th>Geschicklichkeit</th>
+                        <th>16 (+3)</th>
+                    </tr>
+                    <tr>
+                        <th>Konstitution</th>
+                        <th>12 (+1)</th>
+                    </tr>
+                    <tr>
+                        <th>Intelligenz</th>
+                        <th>13 (+1)</th>
+                    </tr>
+                    <tr>
+                        <th>Weisheit</th>
+                        <th>10 (+0)</th>
+                    </tr>
+                    <tr>
+                        <th>Charisma</th>
+                        <th>16 (+3)</th>
+                    </tr>
+                </table>
+            </div>
 
-    <!--Fähigkeitswerte-->
-    <div class="section">
-        <h2>Fähigkeitswerte</h2>
-        <table>
-            <tr>
-                <th width="30%">Stärke</th>
-                <th>8 (-1)</th> 
-            </tr>
-            <tr>
-                <th>Geschicklichkeit</th>
-                <th>16 (+3)</th>
-            </tr>
-            <tr>
-                <th>Konstitution</th>
-                <th>12 (+1)</th>
-            </tr>
-            <tr>
-                <th>Intelligenz</th>
-                <th>13 (+1)</th>
-            </tr>
-            <tr>
-                <th>Weisheit</th>
-                <th>10 (+0)</th>
-            </tr>
-            <tr>
-                <th>Charisma</th>
-                <th>16 (+3)</th>
-            </tr>
-        </table>
-    </div>
+            <!--Waffen-->
+            <div class="section">
+                <h2>Waffen</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Dolch</th>
+                        <th>Atk Bonus: +5 1w4+3</th>
+                    </tr>
+                    <tr>
+                        <th>Kurzbogen</th>
+                        <th>Atk Bonus +5 1w6+3</th> 
+                    </tr>
+                    <tr>
+                        <th>Waffe 3</th>
+                        <th></th> 
+                    </tr>
+                </table>
+            </div>
 
-    <!--Waffen-->
-    <div class="section">
-        <h2>Waffen</h2>
-        <table>
-            <tr>
-                <th width="30%">Dolch</th>
-                <th>Atk Bonus: +5 1w4+3</th>
-            </tr>
-            <tr>
-                <th>Kurzbogen</th>
-                <th>Atk Bonus +5 1w6+3</th> 
-            </tr>
-            <tr>
-                <th>Waffe 3</th>
-                <th></th> 
-            </tr>
-        </table>
-    </div>
+            <!-- Ausrüstung -->
+            <div class="section">
+                <h2>Ausrüstung</h2>
+                <table>
+                    <tr>
+                        <th width="30%">Lederrüstung</th>
+                        <th>Eine Lederrüstung die den Oberkörper sowie die Arme abdeckt. AC: 11+ Dex Modifier</th>
+                    </tr>
+                    <!--<tr>
+                        <th>Ausrüstung 2</th>
+                        <th></th> 
+                    </tr>
+                    <tr>
+                        <th>Ausrüstung 3</th>
+                        <th></th> 
+                    </tr>-->
+                </table>
+            </div>
+            
+            <!--Traits-->
+            <div class="section">
+                <h2>Traits</h2>
+                <table>
+                    <tr>
+                        <th width="50%">Traitname</th>
+                        <th width="50%">Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <th>Hinterhältiger Angriff</th>
+                        <th>Du kannst einmal pro zug zu einem getroffenen angriff 1d6 Schaden hinzufügen wenn du im vorteil bist.</th>
+                    </tr>
+                    <tr>
+                        <th>Halblingsglück</th>
+                        <th>Wirfst du bei einem d20 wurf eine eins darfst du noch mal würfeln musst das ergebnis dann aber verwenden.</th>
+                    </tr>
+                    <tr>
+                        <th>Tapferkeit</th>
+                        <th>Du bist bei Rettungs- und Aufhebungswürfen gegen den Verängstigt zustand bei dir selbst im vorteil.</th>
+                    </tr>
+                    <tr>
+                        <th>Angeborene Verstohlenheit</th>
+                        <th>Du kannst dich versuchen zu verstecken wenn du von einer Kreatur verdeckt wirst die mindestens eine Kategorie Größer ist als du.</th>
+                    </tr>
+                    <tr>
+                        <th>Halblingsgewandheit</th>
+                        <th>Du kannst dich durch den Bereich aller anderer Kreaturen bewegen, die mindestens eine Kategorie größer sind als du.</th>
+                    </tr>
+                    <!--<tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>-->
+                </table>
+            </div>
 
-    <!-- Ausrüstung -->
-    <div class="section">
-        <h2>Ausrüstung</h2>
-        <table>
-            <tr>
-                <th width="30%">Lederrüstung</th>
-                <th>Eine Lederrüstung die den Oberkörper sowie die Arme abdeckt. AC: 11+ Dex Modifier</th>
-            </tr>
-            <!--<tr>
-                <th>Ausrüstung 2</th>
-                <th></th> 
-            </tr>
-            <tr>
-                <th>Ausrüstung 3</th>
-                <th></th> 
-            </tr>-->
-        </table>
-    </div>
-    
-    <!--Traits-->
-    <div class="section">
-        <h2>Traits</h2>
-        <table>
-            <tr>
-                <th width="50%">Traitname</th>
-                <th width="50%">Beschreibung</th>
-            </tr>
-            <tr>
-                <th>Hinterhältiger Angriff</th>
-                <th>Du kannst einmal pro zug zu einem getroffenen angriff 1d6 Schaden hinzufügen wenn du im vorteil bist.</th>
-            </tr>
-            <tr>
-                <th>Halblingsglück</th>
-                <th>Wirfst du bei einem d20 wurf eine eins darfst du noch mal würfeln musst das ergebnis dann aber verwenden.</th>
-            </tr>
-            <tr>
-                <th>Tapferkeit</th>
-                <th>Du bist bei Rettungs- und Aufhebungswürfen gegen den Verängstigt zustand bei dir selbst im vorteil.</th>
-            </tr>
-            <tr>
-                <th>Angeborene Verstohlenheit</th>
-                <th>Du kannst dich versuchen zu verstecken wenn du von einer Kreatur verdeckt wirst die mindestens eine Kategorie Größer ist als du.</th>
-            </tr>
-            <tr>
-                <th>Halblingsgewandheit</th>
-                <th>Du kannst dich durch den Bereich aller anderer Kreaturen bewegen, die mindestens eine Kategorie größer sind als du.</th>
-            </tr>
-            <!--<tr>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>-->
-        </table>
-    </div>
+            <!--Sprachen-->
+            <div class="section">
+                <h2>Sprachen</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Standart
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Halblingisch
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Goblinisch
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Diebessprache
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-    <!--Sprachen-->
-    <div class="section">
-        <h2>Sprachen</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                    Standart
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    Halblingisch
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    Goblinisch
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    Diebessprache
-                </th>
-            </tr>
-        </table>
-    </div>
+            <!-- Hintergrund -->
+            <div class="section">
+                <h2>Hintergrundgeschichte</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Schon in jungen Jahren wurdest du ein Mitglied in der Diebesgilde Vergoldete Galgen". In den letzten Jahren florierte die Gilde und ihr Einfluss breitet sich entlang der gesamten Schwertküste aus. Du bist dieser Ausbreitung gefolgt, in der Hoffnung, dein Glück in der Stadt Niewinter zu finden. <p>
+                            Dein Hintergrund hat deinen Charakter auf wichtige Art und Weise geprågt. Schurken und Glücksspieler haben dich den Umgang mit Diebeswerkzeug gelehrt. Von ihnen hast du zudem Goblinisch erlernt. Dass du in den Fertigkeiten Täuschen und Heimlichkeit geübt bist, spiegelt auch dein Heranwachsen wider: Allzu oft musstest du dich aus Ärger herausreden und an unfreundlichen Augenpaaren vorbeischleichen. <p>
+                            Die „Geschäfte" in Niewinter liefen gut, doch der erhoffte schnelle Reichtum blieb aus. <p>
+                            Ein Schmuggler erzählte dir von einem hochrangigen Mitglied der Vergoldeten Galgen, das zum Verräter wurde, seinen Partner tötete und sich mit einem gewaltigen Schatz aus dem Staub machte. Hier und da hast du Dinge auf- geschnappt, die diese Geschichte zu bestätigen scheinen, sodass du sicher bist, dass sie mehr als nur ein Gerücht ist.<p>
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-    <!-- Hintergrund -->
-    <div class="section">
-        <h2>Hintergrundgeschichte</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                    Schon in jungen Jahren wurdest du ein Mitglied in der Diebesgilde Vergoldete Galgen". In den letzten Jahren florierte die Gilde und ihr Einfluss breitet sich entlang der gesamten Schwertküste aus. Du bist dieser Ausbreitung gefolgt, in der Hoffnung, dein Glück in der Stadt Niewinter zu finden. <p>
-                    Dein Hintergrund hat deinen Charakter auf wichtige Art und Weise geprågt. Schurken und Glücksspieler haben dich den Umgang mit Diebeswerkzeug gelehrt. Von ihnen hast du zudem Goblinisch erlernt. Dass du in den Fertigkeiten Täuschen und Heimlichkeit geübt bist, spiegelt auch dein Heranwachsen wider: Allzu oft musstest du dich aus Ärger herausreden und an unfreundlichen Augenpaaren vorbeischleichen. <p>
-                    Die „Geschäfte" in Niewinter liefen gut, doch der erhoffte schnelle Reichtum blieb aus. <p>
-                    Ein Schmuggler erzählte dir von einem hochrangigen Mitglied der Vergoldeten Galgen, das zum Verräter wurde, seinen Partner tötete und sich mit einem gewaltigen Schatz aus dem Staub machte. Hier und da hast du Dinge auf- geschnappt, die diese Geschichte zu bestätigen scheinen, sodass du sicher bist, dass sie mehr als nur ein Gerücht ist.<p>
-                </th>
-            </tr>
-        </table>
-    </div>
+            <!-- Notizen -->
+            <div class="section">
+                <h2>Notizen</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <!-- Hier können zusätzliche Notizen oder Details eingetragen werden -->
+                        </th>
+                    </tr>
+                </table>
+            </div>
 
-    <!-- Notizen -->
-    <div class="section">
-        <h2>Notizen</h2>
-        <table>
-            <tr>
-                <th colspan="2">
-                    <!-- Hier können zusätzliche Notizen oder Details eingetragen werden -->
-                </th>
-            </tr>
-        </table>
-    </div>
-
-</div>
+        </div>
 
 
-</body>
+    </body>
 </html>

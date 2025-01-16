@@ -1,38 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
     <head>
         <style>
-            div {
-                width:auto;
-                height:auto;
-                border:0px dashed black;
-                margin-top: auto;
-                margin-bottom: auto;
+            body {
+                background-image: url("Pictures/Stormwreck_isle_view");/* setzt den hintergrund */
+                background-repeat: no-repeat; /* sorgt dafür das der Hintergrund nur einmal angezeigt wird*/
+                background-size: 100%; /* legt die Hintergrundgröße fest*/
+                background-attachment: fixed; /* Macht den Hintergrund fest, sodass er beim Scrollen nicht verschwindet */
             }
-            body {background-image: url("Pictures/Stormwreck_isle_view");
-            background-repeat: no-repeat;
-            background-size: 100%;}
-            .ce {background-position: center;}
-            .campaignnotes{
-                margin-top: 45%;
-                margin-left: 43%;
-                position: fixed;
+            .campaignnotes{ /* Klasse für knopf */
+                margin-top: 45%; /* Setzt den abstand von oben */
+                margin-left: 43%; /* Setzt den abstand von Links */
+                position: fixed; /* Fixiert die Position des Knopfes */ 
             }
-            .Llthrae{
-                width: 150px ;
-                margin-top: 17%;
+            .Llthrae{ /* Klasse für noch einen Knopf */
+                width: 150px ; /* Setzt die breite des knopfes */
+                margin-top: 17%; /* Der Rest funktioniert wie oben */
                 margin-left: 25%;
                 position: fixed;
             }
-            .Quincy{
-                margin-top: 25%;
+            .Quincy{ /* Noch ein Knopf */
+                margin-top: 25%; /* Funkntioniert wie oben */
                 margin-left: 42%;
                 position: fixed;
             }
-            .Samya{
-                margin-top: 25%;
+            .Samya{ /* Was könnte das wohl sein? noch ein Knopf? */
+                margin-top: 25%; /* guess what? Funktioniert auch wie oben */
                 margin-left: 59%;
                 position: fixed;
+            }
+            .Llthrae:hover{ /* Die hier machen alle das Gleiche: Die Knöpfe Hovern Lassen */
+                transform: scale(1.1); /* vergrößert den Knopf */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Farbe des Schattens beim Hover */
+            }
+            .Quincy:hover{
+                transform: scale(1.1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+            }
+            .Samya:hover{
+                transform: scale(1.1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+            }
+            .campaignnotes:hover{
+                transform: scale(1.1); 
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
             }
         </style>
         <title>Drachen der Sturmwrackinsel Kampagne </title>
